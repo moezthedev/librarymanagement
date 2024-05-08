@@ -7,7 +7,7 @@ function Authors() {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold">Authors</h1>
-      <ul className="list-disc mt-4 ml-6">
+      <ul className=" mt-4 ml-6">
         {authors.map((author) => (
           <AuthorListItem key={author.id} author={author} />
         ))}
@@ -24,7 +24,7 @@ function AuthorListItem({ author }) {
   };
 
   return (
-    <li>
+    <li className="bg-white shadow-md rounded-lg p-4 mb-4">
       <div className="flex flex-col space-y-2">
         <Link href={`/authorsProfile/${author.id}`} className="text-blue-600 hover:underline">
           {author.name}
@@ -48,5 +48,6 @@ function AuthorListItem({ author }) {
     </li>
   );
 }
+
 
 export default Authors;

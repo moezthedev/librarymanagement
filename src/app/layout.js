@@ -45,12 +45,12 @@ export default function RootLayout({ children }) {
         <main className="container mx-auto p-6 flex-grow">{children}</main>
 
        
-        <footer className="bg-white shadow-md p-4 text-center  bottom-0 w-full">
+        {/* <footer className="bg-white shadow-md p-4 text-center  w-full">
           <div className="container mx-auto">
             <p>© {new Date().getFullYear()} My Library App. All rights reserved.</p>
             <p className="text-gray-500">Built with Next.js and Tailwind CSS</p>
           </div>
-        </footer>
+        </footer> */}
       </body>
     </html>
   );
